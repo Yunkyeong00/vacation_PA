@@ -4,18 +4,18 @@
 
 void solve()
 {
-	int a;
+	float a;
 	printf("제품의 가격? ");
-	scanf("%d", &a);
+	scanf("%f", &a);
 
-	int b;
+	float b;
 	printf("할인율(%)? ");
-	scanf("%d", &b);
+	scanf("%f", &b);
 
-	int c, d;
+	float c, d;
 	c = a * (b / 100);
 	d = a - c;
-	printf("할인가: %f원 (%f원 할인)", c,d);
+	printf("할인가: %.f원 (%.f원 할인)", d,c);
 
 }
 
