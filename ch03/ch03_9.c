@@ -4,13 +4,11 @@
 void slove()
 {
 	int a;
-	float b;
 	printf("±Ê¿Ã(ld)? ");
 
 	scanf("%d", &a);
-	b = a * 0.45359237;
 
-	printf("%d ld = %f kg\n", a, b);
+	printf("%d ld = %f kg\n", a, a*0.45359237);
 
 }
 
