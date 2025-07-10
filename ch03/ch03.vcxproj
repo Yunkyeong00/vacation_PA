@@ -127,6 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ch03_1.c" />
+    <ClCompile Include="ch03_10.c" />
+    <ClCompile Include="ch03_11.c" />
+    <ClCompile Include="ch03_2.c" />
+    <ClCompile Include="ch03_3.c" />
+    <ClCompile Include="ch03_4.c" />
+    <ClCompile Include="ch03_5.c" />
+    <ClCompile Include="ch03_6.c" />
+    <ClCompile Include="ch03_7.c" />
     <ClCompile Include="ch03_8.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

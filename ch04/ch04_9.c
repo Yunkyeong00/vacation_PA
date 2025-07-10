@@ -9,11 +9,21 @@ void solve()
 	printf("재생시간(초)?");
 	scanf("%d", &a);
 
+	
 	minute = a / 60;
 	hour = minute / 60;
 	minute = minute % 60;
 	second = a % 60;
-	printf("재생시간은 %d시간 %d분 %d초 입니다.\n", hour, minute, second);
+
+	if (hour == 0)
+	{
+		printf("재생시간은 %d분 %d초 입니다.\n", minute, second);
+	}
+	if (minute == 0)
+	{
+		printf("재생시간은 %d분 %d초 입니다.\n", minute, second);
+	}
+	if(second==0)
 
 
 }
