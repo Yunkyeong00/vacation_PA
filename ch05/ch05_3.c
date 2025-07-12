@@ -16,6 +16,7 @@
 int result(int a)
 {
 	printf("거스론돈 (10원미만 절삭): %d\n", a);
+
 	if (a >= 50000)
 	{
 		printf("50000원 \t%d\n", a / 50000);

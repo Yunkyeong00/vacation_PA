@@ -1,0 +1,42 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+
+void solve()
+{
+	while (1)
+	{
+		int time, m;
+		printf("주차 시간(분)? ");
+		scanf("%d", &time);
+		
+		if (time == 0)
+			break;
+
+		if (time > 1440)
+		{
+			printf("주차 시간은 최대 1440분을 넘을 수 없습니다.\n");
+
+		}
+
+		else if (time < 30)
+		{
+			m = 2000;
+			printf("주차 요금 : 2000원\n");
+		}
+
+		else if (time > 30)    //최초 30분 넘겼을시.
+		{
+			time = time - 30;
+			m = 2000 + ((time + 9) / 10) * 1000;
+			m = (m > 25000) ? 25000 : m;
+			printf("주차요금 : %d원\n", m);
+		}
+	}
+}
+int main()
+{
+	solve();
+
+	return 0;
+
+}
