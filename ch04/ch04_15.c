@@ -16,27 +16,32 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
+#define HWSSR 1.75
+
 void solve()
 {
-	int a, b;
-	double result, USD;
+	int currencyRateWonDolor;
+	int woodaeRate;
+	double rateWonDolor;
+	double USD;
 
 	printf("원/달러 매매기준율?");
-	scanf("%d", &a);
+	scanf("%d", &currencyRateWonDolor);
 
 	printf("환율우대율(0~100%)?");
-	scanf("%d", &b);
+	scanf("%d", &woodaeRate);
 
-	const double s = 1.75 / 100;
-	result = a + a * s * (1 - b / 100.0);
-	printf("달러 살 때 환율은 %lf입니다.\n", result);
+	const double s = HWSSR / 100;
+	rateWonDolor = currencyRateWonDolor + currencyRateWonDolor * s * (1 - woodaeRate / 100.0);
+	printf("달러 살 때 환율은 %lf입니다.\n", rateWonDolor);
 
 	float c;
 	printf("구입할 달러(USD)?");
 	scanf("%f", &c);
-	USD = result * c;
+	USD = rateWonDolor * c;
 	printf("USD %.2f 살 때==> KRW %.2f", c, USD);
 }
+
 
 int main()
 {

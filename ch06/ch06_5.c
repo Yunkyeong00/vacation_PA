@@ -16,6 +16,7 @@ void solve(void)
 
 		else if (is_even(num))
 			even++;
+
 		else if (is_odd(num))
 			odd++;
 	}
